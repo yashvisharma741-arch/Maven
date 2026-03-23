@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/yashvisharma741-arch/DevopsSample.git'
+                git branch: 'main', url: 'https://github.com/yashvisharma741-arch/Maven.git'
             }
         }
 
@@ -29,7 +29,7 @@ pipeline {
         stage('Run Application') {
             steps {
                 // Start the JAR application
-                sh 'java -jar target/2023SimpleMaven-1.0-SNAPSHOT.jar'
+                sh 'java -jar target/SimpleMaven-1.0-SNAPSHOT.jar'
             }
         }
 
